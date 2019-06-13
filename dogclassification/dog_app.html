@@ -14612,6 +14612,14 @@ Test Accuracy: 74% (626/836)
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> (Three possible points for improvement)</p>
+<p>This model already gives good improvement in comparison to the model trained from scratch. 
+However It was only trained for a short amount of time (~20 Epochs). 
+So first thing to improve would be the training duration.
+Secondly from the training output we see that the validation loss is decreasing really slow in comparison to 
+the training loss. So it is necessary to avoid overfitting in particular when training for a longer duration.
+So we could add some dropout in the output layer.
+Finally I think it could make sense to train larger parts of the network to learn more important features 
+of this classification problem in particular.</p>
 
 </div>
 </div>
